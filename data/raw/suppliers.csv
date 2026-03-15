@@ -1,0 +1,35 @@
+supplier_sk,supplier_id,supplier_code,supplier_name,supplier_category,country,city,vat_id,payment_terms_days,preferred_flag,supplier_status,contact_email,source_system,effective_from,effective_to,is_current,source_updated_at
+1,SUP-401,S-401,UrbanPlan Architects,Design,DE,Berlin,DE129845671,30,Y,Active,projects@urbanplan.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-01-05T08:15:00
+2,SUP-402,S-402,NordBuild Construction,Construction,DE,Hamburg,DE238745612,45,Y,Active,accounts@nordbuild.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-09-01T10:00:00
+3,SUP-403,S-403,GridLine Utilities,Infrastructure,DE,Frankfurt,DE189237654,30,Y,Active,billing@gridline.de,VENDOR_MDM,2023-01-01,2024-12-31,N,2024-12-31T18:00:00
+4,SUP-403,S-403,GridLine Infrastructure,Infrastructure,DE,Frankfurt,DE189237654,45,Y,Active,finance@gridline.de,VENDOR_MDM,2025-01-01,9999-12-31,Y,2025-01-01T08:05:00
+5,SUP-404,S-404,Rheinbau GmbH,Construction,DE,Cologne,DE457812369,30,Y,Active,ap@rheinbau.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-03-20T09:40:00
+6,SUP-405,S-405,Blueprint Engineering,Engineering,DE,Stuttgart,DE564738291,30,N,Active,office@blueprint-eng.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-02-01T11:25:00
+7,SUP-406,S-406,Alpha Structural Systems,Construction,DE,Leipzig,DE675849302,60,Y,Active,invoice@alphastruct.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-01-15T12:10:00
+8,SUP-407,S-407,Hanse Concrete Works,Construction,DE,Hamburg,DE786950413,45,N,Active,ar@hanseconcrete.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-03-01T14:45:00
+9,SUP-408,S-408,OfficeFit Interiors,Interior,DE,Berlin,DE897061524,30,Y,Active,finance@officefit.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-07-15T16:30:00
+10,SUP-409,S-409,TerraSite Development,Land,DE,Munich,DE908172635,30,Y,Active,ap@terrasite.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-03-10T10:50:00
+11,SUP-410,S-410,Peak Crane Services,Construction,DE,Nuremberg,DE019283746,21,N,Active,accounting@peakcrane.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-06-01T09:15:00
+12,SUP-411,S-411,SmartGrid Cabling,Infrastructure,DE,Frankfurt,DE120394857,30,N,Active,billing@smartgrid.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-07-28T08:20:00
+13,SUP-412,S-412,Project Risk Advisors,Consulting,DE,Berlin,DE231405968,14,N,Active,contact@riskadvisors.de,VENDOR_MDM,2024-11-01,9999-12-31,Y,2025-01-20T13:35:00
+14,SUP-413,S-413,MainSteel Fabrication,Construction,DE,Frankfurt,DE342516079,45,Y,Active,finance@mainsteel.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-09-05T12:12:00
+15,SUP-414,S-414,RenoCraft Materials,Materials,DE,Cologne,DE453627180,30,Y,Active,ap@renocraft.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2023-03-01T09:09:00
+16,SUP-415,S-415,WestBuild Contractors,Construction,DE,Essen,,45,N,Active,ops@westbuild.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2023-04-05T10:15:00
+17,SUP-416,S-416,Schwabia Civil Works,Construction,DE,Stuttgart,DE564738291,30,N,Active,finance@schwabia.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2024-09-10T11:11:00
+18,SUP-417,S-417,GreenFrame Timber,Construction,DE,Ulm,DE675841119,30,Y,Inactive,billing@greenframe.de,VENDOR_MDM,2023-01-01,9999-12-31,Y,2025-01-10T17:45:00
+19,SUP-418,S-418,Hospitality Design Lab,Design,DE,Duesseldorf,DE786952220,21,Y,Active,studio@hdl.de,VENDOR_MDM,2024-12-01,9999-12-31,Y,2025-01-05T08:08:00
+20,SUP-419,S-419,Rivergate Contractors,Construction,DE,Duesseldorf,DE897063331,45,Y,Active,ap@rivergate-contractors.de,VENDOR_MDM,2025-01-01,9999-12-31,Y,2025-03-01T12:00:00
+21,SUP-420,S-420,Leipzig Retail Builders,Construction,DE,Leipzig,DE908174442,30,N,Inactive,finance@lrb.de,VENDOR_MDM,2024-01-01,9999-12-31,Y,2024-05-15T09:30:00
+22,SUP-421,S-421,Industrial Foundations AG,Construction,DE,Nuremberg,DE019285553,60,Y,Active,invoice@if-ag.de,VENDOR_MDM,2024-01-01,9999-12-31,Y,2024-04-10T10:10:00
+23,SUP-422,S-422,Prime Site Installations,Construction,DE,Regensburg,DE120396664,45,Y,Active,ar@primesite.de,VENDOR_MDM,2024-01-01,9999-12-31,Y,2024-06-08T15:16:00
+24,SUP-423,S-423,VoltEdge Utilities,Infrastructure,DE,Nuremberg,DE231407775,30,N,Active,billing@voltedge.de,VENDOR_MDM,2024-01-01,9999-12-31,Y,2024-08-28T11:01:00
+25,SUP-424,S-424,Factory Shell Partners,Construction,DE,Ingolstadt,DE342518886,45,Y,Active,finance@fsp.de,VENDOR_MDM,2024-11-01,9999-12-31,Y,2025-01-12T08:25:00
+26,SUP-425,S-425,Capital Design Studio,Design,DE,Berlin,DE453629997,30,N,Active,office@capitaldesign.de,VENDOR_MDM,2024-09-01,9999-12-31,Y,2024-09-15T14:14:00
+27,SUP-426,S-426,MetroCore Construction,Construction,DE,Berlin,DE564730008,45,Y,Active,ap@metrocore.de,VENDOR_MDM,2024-09-01,9999-12-31,Y,2024-11-01T09:45:00
+28,SUP-427,S-427,Premium Office Interiors,Interior,DE,Berlin,DE675841220,30,Y,Active,billing@premiumoffice.de,VENDOR_MDM,2025-01-01,9999-12-31,Y,2025-02-01T10:35:00
+29,SUP-428,S-428,North Port Construction,Construction,DE,Bremen,DE786952331,45,Y,Active,finance@northport.de,VENDOR_MDM,2024-07-01,9999-12-31,Y,2024-08-01T08:44:00
+30,SUP-429,S-429,Storage Build Solutions,Construction,DE,Bremen,DE897063442,45,N,Active,ap@storagebuild.de,VENDOR_MDM,2024-09-01,9999-12-31,Y,2024-10-01T12:22:00
+31,SUP-430,S-430,Harbor Utility Networks,Infrastructure,DE,Bremen,DE908174553,30,N,Active,billing@harborutility.de,VENDOR_MDM,2024-12-01,9999-12-31,Y,2025-01-02T09:55:00
+32,SUP-431,S-431,UrbanMass Constructors,Construction,DE,Frankfurt,DE019285664,45,Y,Active,finance@urbanmass.de,VENDOR_MDM,2024-08-01,9999-12-31,Y,2024-09-20T11:11:00
+33,SUP-432,S-432,Highline Concrete Systems,Construction,DE,Frankfurt,DE120396775,45,Y,Active,ap@highlineconcrete.de,VENDOR_MDM,2024-11-01,9999-12-31,Y,2024-12-05T15:05:00
+34,SUP-433,S-433,QuarterFit Interiors,Interior,DE,Frankfurt,DE231407886,30,Y,Active,billing@quarterfit.de,VENDOR_MDM,2025-02-01,9999-12-31,Y,2025-03-01T08:40:00
