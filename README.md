@@ -55,6 +55,9 @@ Zielbild der Plattform:
 - SQL fuer Modellierung, Transformation und Historisierung
 - Power BI fuer Visualisierung und KPI-Reporting
 
+Diagramm:
+- [Solution Architecture](C:\Users\Beyza\Desktop\Repositorys\azure-dwh-real-estate-analytics\azure-dwh-real-estate-analytics\docs\solution-architecture.md)
+
 ## Tech Stack
 
 - **SQL** fuer DDL, Transformationen, Star Schema und Datenqualitaetspruefungen
@@ -93,6 +96,9 @@ Beispielhafte Business-Fragen, die mit dem Star Schema beantwortet werden sollen
 - Welche Projekte weisen die groessten Kostenabweichungen auf?
 - Wie veraendert sich der Projektstatus im Zeitverlauf?
 - Welche Kostenarten treiben Budgetueberschreitungen?
+
+Diagramm:
+- [Star Schema](C:\Users\Beyza\Desktop\Repositorys\azure-dwh-real-estate-analytics\azure-dwh-real-estate-analytics\docs\star-schema.md)
 
 ## SCD Type 2
 
@@ -202,7 +208,9 @@ Die Repository-Struktur ist fuer eine saubere Trennung von Fachkonzept, Daten, S
 ```text
 azure-dwh-real-estate-analytics/
 |-- docs/
-|   `-- scd2-explanation.md
+|   |-- solution-architecture.md
+|   |-- scd2-explanation.md
+|   `-- star-schema.md
 |-- data/
 |   |-- ingested/
 |   |-- processed/
