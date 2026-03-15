@@ -1,0 +1,23 @@
+employee_sk,employee_id,employee_number,full_name,job_title,department,manager_employee_id,email,employment_status,employment_type,location,country,hire_date,termination_date,source_system,effective_from,effective_to,is_current,source_updated_at
+1,EMP-100,E100,Anna Keller,Project Manager,Project Delivery,EMP-200,anna.keller@buildcorp.de,Active,Internal,Berlin,DE,2021-04-01,,HR_MASTER,2021-04-01,2024-08-31,N,2024-08-31T18:00:00
+2,EMP-100,E100,Anna Keller,Senior Project Manager,Project Delivery,EMP-200,anna.keller@buildcorp.de,Active,Internal,Berlin,DE,2021-04-01,,HR_MASTER,2024-09-01,9999-12-31,Y,2024-09-01T08:00:00
+3,EMP-101,E101,Lukas Weber,Project Manager,Project Delivery,EMP-200,lukas.weber@buildcorp.de,Active,Internal,Hamburg,DE,2020-09-15,,HR_MASTER,2020-09-15,9999-12-31,Y,2025-01-03T09:00:00
+4,EMP-102,E102,Miriam Scholz,Project Manager,Project Delivery,EMP-200,miriam.scholz@buildcorp.de,Active,Internal,Berlin,DE,2022-01-10,,HR_MASTER,2022-01-10,9999-12-31,Y,2024-09-01T08:30:00
+5,EMP-103,E103,David Fischer,Program Manager,Project Delivery,EMP-201,david.fischer@buildcorp.de,Active,Internal,Munich,DE,2019-06-03,,HR_MASTER,2019-06-03,9999-12-31,Y,2025-02-01T10:05:00
+6,EMP-104,E104,Sarah Neumann,Project Manager,Project Delivery,EMP-201,sarah.neumann@buildcorp.de,Active,Internal,Frankfurt,DE,2021-11-20,,HR_MASTER,2021-11-20,9999-12-31,Y,2025-01-02T08:20:00
+7,EMP-105,E105,Jonas Becker,Project Manager,Project Delivery,EMP-201,jonas.becker@buildcorp.de,Active,Internal,Cologne,DE,2018-02-12,2024-08-31,HR_MASTER,2018-02-12,9999-12-31,Y,2024-08-31T17:00:00
+8,EMP-106,E106,Clara Hoffmann,Project Manager,Project Delivery,EMP-201,clara.hoffmann@buildcorp.de,Active,Internal,Stuttgart,DE,2022-04-04,,HR_MASTER,2022-04-04,9999-12-31,Y,2025-01-18T11:00:00
+9,EMP-107,E107,Tobias Krueger,Project Manager,Project Delivery,EMP-201,tobias.krueger@buildcorp.de,Active,Internal,Duesseldorf,DE,2023-07-01,,HR_MASTER,2023-07-01,9999-12-31,Y,2025-01-15T09:10:00
+10,EMP-108,E108,Nina Richter,Project Manager,Project Delivery,EMP-201,nina.richter@buildcorp.de,Active,Internal,Leipzig,DE,2020-10-16,2024-11-30,HR_MASTER,2020-10-16,9999-12-31,Y,2024-11-30T16:40:00
+11,EMP-109,E109,Marco Hartmann,Project Manager,Project Delivery,EMP-201,marco.hartmann@buildcorp.de,Active,Internal,Nuremberg,DE,2021-05-24,,HR_MASTER,2021-05-24,9999-12-31,Y,2025-02-03T14:00:00
+12,EMP-110,E110,Elena Vogt,Project Manager,Project Delivery,EMP-201,elena.vogt@buildcorp.de,Active,Internal,Berlin,DE,2022-08-08,,HR_MASTER,2022-08-08,9999-12-31,Y,2025-02-14T15:55:00
+13,EMP-111,E111,Patrick Braun,Project Manager,Project Delivery,EMP-201,patrick.braun@buildcorp.de,Active,Internal,Bremen,DE,2023-01-09,,HR_MASTER,2023-01-09,9999-12-31,Y,2025-01-27T08:35:00
+14,EMP-112,E112,Laura Schmitt,Development Manager,Real Estate Development,EMP-202,laura.schmitt@buildcorp.de,Active,Internal,Munich,DE,2022-03-14,,HR_MASTER,2022-03-14,9999-12-31,Y,2025-02-10T07:45:00
+15,EMP-200,E200,Stefan Braun,Head of Project Delivery,Project Delivery,,stefan.braun@buildcorp.de,Active,Internal,Frankfurt,DE,2016-01-18,,HR_MASTER,2016-01-18,9999-12-31,Y,2025-01-01T08:00:00
+16,EMP-201,E201,Katharina Wolf,Director Construction,Operations,EMP-300,katharina.wolf@buildcorp.de,Active,Internal,Hamburg,DE,2014-05-05,,HR_MASTER,2014-05-05,9999-12-31,Y,2025-01-01T08:10:00
+17,EMP-202,E202,Florian Koch,Finance Business Partner,Finance,EMP-300,florian.koch@buildcorp.de,Active,Internal,Berlin,DE,2017-09-11,,HR_MASTER,2017-09-11,9999-12-31,Y,2025-01-01T08:20:00
+18,EMP-203,E203,Sophie Lang,Senior Finance Manager,Finance,EMP-300,sophie.lang@buildcorp.de,Active,Internal,Stuttgart,DE,2018-06-25,,HR_MASTER,2018-06-25,9999-12-31,Y,2025-01-01T08:30:00
+19,EMP-204,E204,Daniel Otto,Controller,Finance,EMP-203,daniel.otto@buildcorp.de,Active,Internal,Duesseldorf,DE,2023-01-17,,HR_MASTER,2023-01-17,9999-12-31,Y,2025-01-08T09:15:00
+20,EMP-300,E300,Julia Meier,CFO,Executive,,julia.meier@buildcorp.de,Active,Internal,Berlin,DE,2012-04-01,,HR_MASTER,2012-04-01,9999-12-31,Y,2025-01-01T07:55:00
+21,EMP-113,E113,Leonie Peters,Project Analyst,Project Controls,EMP-202,leonie.peters@buildcorp.de,Active,Internal,Frankfurt,DE,2024-01-08,,HR_MASTER,2024-01-08,9999-12-31,Y,2025-01-12T10:20:00
+22,EMP-114,E114,Maximilian Jung,Project Analyst,Project Controls,EMP-202,leonie.peters@buildcorp.de,Active,Internal,Hamburg,DE,2024-02-19,,HR_MASTER,2024-02-19,9999-12-31,Y,2025-01-13T10:20:00
