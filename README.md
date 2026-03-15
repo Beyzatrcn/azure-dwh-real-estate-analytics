@@ -135,6 +135,8 @@ Geplante Pipeline-Funktionen:
 - SCD-Type-2-Verarbeitung fuer relevante Dimensionen
 - Datenqualitaetschecks fuer Schluessel, Nullwerte und Konsistenz
 
+Die lokale Demo-Pipeline ist dateibasiert umgesetzt und erzeugt nachvollziehbare Artefakte in `data/ingested/`, `data/processed/`, `data/warehouse/` und `data/quality/`.
+
 ## Power BI Output
 
 Der Reporting-Layer ist fuer ein Controlling-Dashboard ausgelegt, das typische Anforderungen aus dem Projekt- und Immobilienumfeld abbildet.
@@ -151,19 +153,47 @@ Das Ziel ist ein klar nachvollziehbares BI-Frontend auf Basis eines sauber model
 
 ## Lokale Ausfuehrung
 
-Die Implementierung wird so vorbereitet, dass das Projekt lokal nachvollziehbar entwickelt und spaeter erweitert werden kann.
+Die lokale Pipeline ist bewusst so aufgebaut, dass sie ohne externe Cloud-Ressourcen nachvollzogen werden kann. Die Python-Skripte verwenden nur die Standardbibliothek und arbeiten direkt auf den Demo-CSV-Dateien.
 
-Geplanter lokaler Ablauf:
+Voraussetzungen:
+
+- Python 3.10 oder neuer
+
+Ausfuehrungsablauf:
 
 1. Repository klonen
-2. Python-Umgebung einrichten
-3. Abhaengigkeiten installieren
-4. Demo-Quelldaten bereitstellen
-5. Pipeline-Schritte lokal ausfuehren
-6. SQL-Modelle gegen die Zielumgebung oder eine lokale Demo-Struktur anwenden
-7. Reporting-Daten in Power BI anbinden
+2. Im Projektordner die Pipeline starten:
 
-Die konkreten Setup- und Run-Schritte werden mit der Implementierung im Repository dokumentiert.
+```bash
+python src/main.py
+```
+
+Alternativ koennen die Schritte einzeln ausgefuehrt werden:
+
+```bash
+python src/ingest_data.py
+python src/transform_data.py
+python src/load_dimensions.py
+python src/load_facts.py
+python src/run_quality_checks.py
+```
+
+Der Ablauf ist:
+
+1. Raw-Dateien nach `data/ingested/` uebernehmen
+2. Felder standardisieren und in `data/processed/` schreiben
+3. Dimensionen als Warehouse-Artefakte in `data/warehouse/` erzeugen
+4. Fakten mit Surrogate Keys in `data/warehouse/` laden
+5. Data-Quality-Checks ausfuehren und den Report nach `data/quality/quality_report.json` schreiben
+
+Wichtige Pipeline-Dateien:
+
+- `src/ingest_data.py`
+- `src/transform_data.py`
+- `src/load_dimensions.py`
+- `src/load_facts.py`
+- `src/main.py`
+- `src/run_quality_checks.py`
 
 ## Projektstruktur
 
@@ -172,28 +202,30 @@ Die Repository-Struktur ist fuer eine saubere Trennung von Fachkonzept, Daten, S
 ```text
 azure-dwh-real-estate-analytics/
 |-- docs/
-|   |-- architecture.md
-|   |-- business-case.md
-|   |-- data-model.md
-|   |-- kpi-definition.md
-|   `-- scd-type-2-strategy.md
+|   `-- scd2-explanation.md
 |-- data/
-|   |-- raw/
+|   |-- ingested/
 |   |-- processed/
-|   `-- reference/
+|   |-- quality/
+|   |-- raw/
+|   `-- warehouse/
+|-- src/
+|   |-- data_quality_checks.py
+|   |-- ingest_data.py
+|   |-- load_dimensions.py
+|   |-- load_facts.py
+|   |-- main.py
+|   |-- run_quality_checks.py
+|   |-- scd_type2.py
+|   `-- transform_data.py
 |-- sql/
-|   |-- ddl/
-|   |-- staging/
-|   |-- core/
-|   |-- marts/
-|   `-- tests/
-|-- python/
-|   |-- src/
-|   |-- pipelines/
-|   |-- config/
-|   `-- tests/
-|-- powerbi/
-|-- infra/
+|   |-- 00_create_schemas.sql
+|   |-- 01_dimensions.sql
+|   |-- 02_facts.sql
+|   |-- 03_scd2_dim_project.sql
+|   `-- 08_quality_checks.sql
+|-- tests/
+|   `-- test_data_quality_checks.py
 `-- README.md
 ```
 
@@ -211,5 +243,5 @@ Dieses Repository ist als Bewerbungsprojekt fuer eine Junior Data Warehouse Engi
 
 ## Status
 
-Das Projekt befindet sich aktuell im strukturierten Aufbau.  
-Als naechste Schritte folgen die Ausarbeitung der Dokumentation, die Definition der Demo-Quelldaten, das SQL-Datenmodell sowie die erste Pipeline-Implementierung.
+Das Projekt enthaelt inzwischen eine lokal ausfuehrbare Demo-ELT-Pipeline inklusive Demo-Daten, dimensionalem Modell, SCD-Type-2-Logik fuer `dim_project` und Data-Quality-Checks.  
+Als naechste Schritte folgen die SQL-basierte Ladeorchestrierung gegen eine echte Zielumgebung sowie der Aufbau des Power-BI-Reportings.
